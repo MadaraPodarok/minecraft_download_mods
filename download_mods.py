@@ -8,7 +8,7 @@ import shutil
 import zipfile
 import threading
 import logging
-from env_data import DROPBOX_ACCESS_TOKEN  # Переменная теперь импортируется отсюда
+from auth import authenticate_dropbox # Импортируем функцию для получения токена
 
 # Конфигурация логирования
 logging.basicConfig(
@@ -18,7 +18,7 @@ logging.basicConfig(
 )
 
 # Токен Dropbox
-DROPBOX_TOKEN = DROPBOX_ACCESS_TOKEN
+DROPBOX_TOKEN = authenticate_dropbox()
 
 # Список версий и путей к файлам
 VERSIONS = {

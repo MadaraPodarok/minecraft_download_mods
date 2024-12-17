@@ -6,7 +6,9 @@ load_dotenv(".env")
 
 # Список переменных, которые нужно включить
 env_variables = {
-    "DROPBOX_ACCESS_TOKEN": os.getenv("DROPBOX_ACCESS_TOKEN")
+    "APP_KEY": os.getenv("APP_KEY"),
+    "APP_SECRET": os.getenv("APP_SECRET"),
+    "REFRESH_TOKEN": os.getenv("REFRESH_TOKEN")
 }
 
 # Генерация временного файла с переменными
