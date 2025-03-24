@@ -1,1 +1,1 @@
-Get-ChildItem -Path "C:\ПУТЬ\К\ПАПКЕ" -File | Select-Object Name, FullName, Length, LastWriteTime | Format-Table -AutoSize | Out-File -Encoding utf8 "C:\список_файлов.txt" - Получить список файлов в папке windows
+Программа установки модов
